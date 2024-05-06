@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dln3qsfo5xy5d"]
+
+[ext_resource type="Script" path="res://nodo.gd" id="1_74in8"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_rhbim"]
+
+[node name="Nodo" type="Button"]
+offset_right = 24.0
+offset_bottom = 24.0
+icon = SubResource("CanvasTexture_rhbim")
+flat = true
+expand_icon = true
+script = ExtResource("1_74in8")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
